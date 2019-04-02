@@ -1,0 +1,15 @@
+[package]
+name = "vecdump"
+version = "0.1.0"
+authors = ["cthwaite <thwaite@mac.com>"]
+edition = "2018"
+
+[dependencies]
+bincode = "^1.1"
+lexical = "^2.1"
+rayon = "^1.0"
+memmap = "^0.7"
+rocksdb = { version = "^0.12", optional = true }
+
+[features]
+rocks-db = ["rocksdb"]
